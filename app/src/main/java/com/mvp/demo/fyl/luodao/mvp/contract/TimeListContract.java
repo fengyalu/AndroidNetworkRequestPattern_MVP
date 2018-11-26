@@ -3,7 +3,6 @@ package com.mvp.demo.fyl.luodao.mvp.contract;
 import com.mvp.demo.fyl.luodao.base.BaseModel;
 import com.mvp.demo.fyl.luodao.base.BasePresenter;
 import com.mvp.demo.fyl.luodao.base.BaseView;
-import com.mvp.demo.fyl.luodao.bean.StationInfo;
 import com.mvp.demo.fyl.luodao.bean.TransTimeList;
 import com.mvp.demo.fyl.luodao.exception.ExceptionHandle;
 
@@ -13,7 +12,7 @@ import java.util.Map;
 import rx.Observable;
 
 /**
- * Created by fengyalu on 18-7-13.
+ * Created by fyl on 18-7-13.
  */
 
 public interface TimeListContract {

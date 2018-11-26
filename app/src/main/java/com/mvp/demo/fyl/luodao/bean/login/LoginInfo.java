@@ -1,7 +1,7 @@
 package com.mvp.demo.fyl.luodao.bean.login;
 
 /**
- * Created by Administrator on 2018/7/17.
+ * Created by fyl on 2018/7/17.
  */
 
 public class LoginInfo {

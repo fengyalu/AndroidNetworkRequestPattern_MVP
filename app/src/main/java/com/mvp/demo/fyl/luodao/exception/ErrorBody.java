@@ -1,7 +1,7 @@
 package com.mvp.demo.fyl.luodao.exception;
 
 /**
- * Created by Administrator on 2018/7/15.
+ * Created by fyl on 2018/7/15.
  */
 
 public class ErrorBody {

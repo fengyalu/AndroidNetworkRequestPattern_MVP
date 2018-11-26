@@ -2,12 +2,9 @@ package com.mvp.demo.fyl.luodao.mvp.presenter;
 
 import android.util.Log;
 
-import com.mvp.demo.fyl.luodao.bean.StationInfo;
 import com.mvp.demo.fyl.luodao.bean.TransTimeList;
 import com.mvp.demo.fyl.luodao.exception.ExceptionHandle;
-import com.mvp.demo.fyl.luodao.mvp.contract.StationContract;
 import com.mvp.demo.fyl.luodao.mvp.contract.TimeListContract;
-import com.mvp.demo.fyl.luodao.mvp.model.StationModel;
 import com.mvp.demo.fyl.luodao.mvp.model.TimeListModel;
 
 import java.util.ArrayList;
@@ -19,7 +16,7 @@ import rx.Subscriber;
 import rx.Subscription;
 
 /**
- * Created by fengyalu on 18-7-13.
+ * Created by fyl on 18-7-13.
  */
 
 public class TimeListPresenter extends TimeListContract.Presenter {

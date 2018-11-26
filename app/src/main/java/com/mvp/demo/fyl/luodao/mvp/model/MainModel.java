@@ -1,6 +1,5 @@
 package com.mvp.demo.fyl.luodao.mvp.model;
 
-import android.util.Log;
 import com.google.gson.Gson;
 import com.mvp.demo.fyl.luodao.mvp.contract.MainContract;
 import com.mvp.demo.fyl.luodao.net.NetUtils;
@@ -9,7 +8,6 @@ import com.mvp.demo.fyl.luodao.service.MainService;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
@@ -17,7 +15,7 @@ import okhttp3.ResponseBody;
 import rx.Observable;
 
 /**
- * Created by fengyalu on 18-7-12.
+ * Created by fyl on 18-7-12.
  */
 
 public class MainModel implements MainContract.Model{

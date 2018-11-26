@@ -1,7 +1,6 @@
 package com.mvp.demo.fyl.luodao.mvp.view.adapter;
 
 import android.content.Context;
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

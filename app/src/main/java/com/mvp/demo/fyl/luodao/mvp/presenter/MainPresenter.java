@@ -1,7 +1,5 @@
 package com.mvp.demo.fyl.luodao.mvp.presenter;
 
-import android.util.Log;
-
 import com.mvp.demo.fyl.luodao.mvp.contract.MainContract;
 import com.mvp.demo.fyl.luodao.mvp.model.MainModel;
 
@@ -12,7 +10,7 @@ import rx.Subscriber;
 import rx.Subscription;
 
 /**
- * Created by fengyalu on 18-7-12.
+ * Created by fyl on 18-7-12.
  */
 
 public class MainPresenter extends MainContract.Presenter{

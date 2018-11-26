@@ -12,7 +12,7 @@ import java.util.Map;
 import rx.Observable;
 
 /**
- * Created by Administrator on 2018/7/16.
+ * Created by fyl on 2018/7/16.
  */
 
 public class LoginModel implements LoginContract.Model {

@@ -3,7 +3,7 @@ package com.mvp.demo.fyl.luodao.bean;
 import java.util.List;
 
 /**
- * Created by fengyalu on 18-7-13.
+ * Created by fyl on 18-7-13.
  */
 
 public class StationInfo {

@@ -4,7 +4,7 @@ import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;
 
 /**
- * Created by fengyalu on 18-7-13.
+ * Created by fyl on 18-7-13.
  */
 
 public class BasePresenter<View extends BaseView, Model extends BaseModel> {

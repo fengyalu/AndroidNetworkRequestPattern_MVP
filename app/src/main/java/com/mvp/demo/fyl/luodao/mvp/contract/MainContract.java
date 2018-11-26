@@ -4,13 +4,12 @@ package com.mvp.demo.fyl.luodao.mvp.contract;
 import com.mvp.demo.fyl.luodao.base.BaseModel;
 import com.mvp.demo.fyl.luodao.base.BasePresenter;
 import com.mvp.demo.fyl.luodao.base.BaseView;
-import com.mvp.demo.fyl.luodao.manager.UrlManager;
 
 import okhttp3.ResponseBody;
 import rx.Observable;
 
 /**
- * Created by fengyalu on 18-7-12.
+ * Created by fyl on 18-7-12.
  */
 
 public interface MainContract {

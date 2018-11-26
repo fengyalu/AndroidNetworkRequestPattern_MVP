@@ -3,11 +3,8 @@ package com.mvp.demo.fyl.luodao.mvp.view.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -16,14 +13,12 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.mvp.demo.fyl.luodao.R;
 import com.mvp.demo.fyl.luodao.base.BaseActivity;
-import com.mvp.demo.fyl.luodao.bean.Station;
 import com.mvp.demo.fyl.luodao.bean.StationInfo;
 import com.mvp.demo.fyl.luodao.exception.ExceptionHandle;
 import com.mvp.demo.fyl.luodao.mvp.contract.StationContract;
 import com.mvp.demo.fyl.luodao.mvp.presenter.StationPresenter;
 import com.mvp.demo.fyl.luodao.mvp.view.adapter.StationAdapter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

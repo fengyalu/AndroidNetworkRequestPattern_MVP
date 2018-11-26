@@ -12,7 +12,6 @@ import com.mvp.demo.fyl.luodao.base.BaseActivity;
 import com.mvp.demo.fyl.luodao.mvp.contract.MainContract;
 import com.mvp.demo.fyl.luodao.mvp.presenter.MainPresenter;
 import com.mvp.demo.fyl.luodao.mvp.view.adapter.HomePagerFragmentPagerAdapter;
-import com.mvp.demo.fyl.luodao.mvp.view.fragment.CityListFragment;
 import com.mvp.demo.fyl.luodao.mvp.view.fragment.StationFragment;
 import com.mvp.demo.fyl.luodao.mvp.view.fragment.TrainFragment;
 

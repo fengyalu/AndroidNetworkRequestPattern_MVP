@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * Created by Administrator on 2018/7/14.
+ * Created by fyl on 2018/7/14.
  */
 
 public class UrlManager {

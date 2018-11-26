@@ -1,9 +1,7 @@
 package com.mvp.demo.fyl.luodao.bean;
 
-import java.util.List;
-
 /**
- * Created by fengyalu on 18-7-12.
+ * Created by fyl on 18-7-12.
  */
 
 public class Station {

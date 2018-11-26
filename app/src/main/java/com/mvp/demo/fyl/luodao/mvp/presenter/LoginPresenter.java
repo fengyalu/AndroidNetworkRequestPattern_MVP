@@ -8,12 +8,11 @@ import com.mvp.demo.fyl.luodao.mvp.model.LoginModel;
 import java.util.HashMap;
 import java.util.Map;
 
-import retrofit2.adapter.rxjava.HttpException;
 import rx.Subscriber;
 import rx.Subscription;
 
 /**
- * Created by Administrator on 2018/7/16.
+ * Created by fyl on 2018/7/16.
  */
 
 public class LoginPresenter extends LoginContract.Presenter {

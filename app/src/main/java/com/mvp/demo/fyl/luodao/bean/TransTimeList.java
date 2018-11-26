@@ -3,7 +3,7 @@ package com.mvp.demo.fyl.luodao.bean;
 import java.util.List;
 
 /**
- * Created by Administrator on 2018/7/24 0024.
+ * Created by fyl on 2018/7/24 0024.
  */
 
 public class TransTimeList {

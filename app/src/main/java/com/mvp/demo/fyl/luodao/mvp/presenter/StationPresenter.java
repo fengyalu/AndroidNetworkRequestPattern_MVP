@@ -1,22 +1,18 @@
 package com.mvp.demo.fyl.luodao.mvp.presenter;
+
 import com.mvp.demo.fyl.luodao.bean.StationInfo;
 import com.mvp.demo.fyl.luodao.exception.ExceptionHandle;
-import com.mvp.demo.fyl.luodao.manager.UrlManager;
 import com.mvp.demo.fyl.luodao.mvp.contract.StationContract;
 import com.mvp.demo.fyl.luodao.mvp.model.StationModel;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import okhttp3.ResponseBody;
 import rx.Subscriber;
 import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 /**
- * Created by fengyalu on 18-7-13.
+ * Created by fyl on 18-7-13.
  */
 
 public class StationPresenter extends StationContract.Presenter {

@@ -14,7 +14,7 @@ import okhttp3.ResponseBody;
 import retrofit2.adapter.rxjava.HttpException;
 
 /**
- * Created by Administrator on 2018/7/15.
+ * Created by fyl on 2018/7/15.
  */
 
 public class ExceptionHandle {
