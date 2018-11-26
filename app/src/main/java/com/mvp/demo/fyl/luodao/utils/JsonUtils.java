@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * 使用Gson解析Json数据
- * add by fan on 2017/3/30
+ * add by fyl on 2017/3/30
  */
 public class JsonUtils {
 
