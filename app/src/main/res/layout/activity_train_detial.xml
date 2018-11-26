@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mvp.demo.fyl.luodao.mvp.view.activity.TrainDetialActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#4f5fc4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/fromCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center|bottom"
+                        android:text=""
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/fromTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center|top"
+                        android:text=""
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/time_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/time_list" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时刻表"
+                            android:textColor="#FFFFFFFF" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/toCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center|bottom"
+                        android:text=""
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/toTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center|top"
+                        android:text=""
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_usedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="耗时:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/usedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_usedTime"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#f6f3f3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="类型"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="100dp"
+                    android:text="票价(元)"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="100dp"
+                    android:text="余票(张)"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hardseat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_hardseat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="硬座:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hardseat_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_hardseat"
+                    android:gravity="center"
+                    android:paddingLeft="100dp"
+                    android:text=""
+                    android:textColor="#d52929"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hardseat_ticketNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/hardseat_price"
+                    android:gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hardsleeperm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_hardsleeperm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="硬卧:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/hardsleeperm_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_hardsleeperm"
+                    android:gravity="center"
+                    android:paddingLeft="100dp"
+                    android:text=""
+                    android:textColor="#d52929"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hardsleeperm_ticketNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/hardsleeperm_price"
+                    android:gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_noseat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_noseat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="无座:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/noseat_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_noseat"
+                    android:gravity="center"
+                    android:paddingLeft="100dp"
+                    android:text=""
+                    android:textColor="#d52929"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/noseat_ticketNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/noseat_price"
+                    android:gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_softsleeperd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_softsleeperd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="软卧:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/softsleeperd_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_softsleeperd"
+                    android:gravity="center"
+                    android:paddingLeft="100dp"
+                    android:text=""
+                    android:textColor="#d52929"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/softsleeperd_ticketNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/softsleeperd_price"
+                    android:gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_businessseat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_businessseat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="商务座:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/businessseat_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_businessseat"
+                    android:gravity="center"
+                    android:paddingLeft="85dp"
+                    android:text=""
+                    android:textColor="#d52929"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/businessseat_ticketNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/businessseat_price"
+                    android:gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_firstseat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_firstseat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="一等座:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/firstseat_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_firstseat"
+                    android:gravity="center"
+                    android:paddingLeft="85dp"
+                    android:text=""
+                    android:textColor="#d52929"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/firstseat_ticketNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/firstseat_price"
+                    android:gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_secondseat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/txt_secondseat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="二等座:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/secondseat_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_secondseat"
+                    android:gravity="center"
+                    android:paddingLeft="85dp"
+                    android:text=""
+                    android:textColor="#d52929"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/secondseat_ticketNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/secondseat_price"
+                    android:gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text=""
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4f5fc5"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/txt_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/image_bar"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="车次明细"
+                android:textColor="#FFFFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
